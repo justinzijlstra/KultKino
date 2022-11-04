@@ -1,0 +1,154 @@
+/******************************************
+/* CSS
+/*******************************************/
+@font-face {
+  font-family: "Slimey";
+  src: url(../fonts/MyFontIsSlimey-Regular.ttf);
+}
+/* Box Model Hack */
+*{
+  box-sizing: border-box;
+}
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+
+body{
+  background-color: rgb(0, 0, 0);
+  background: radial-gradient(circle, rgb(79,0,142), #000000 50%);
+  height: 100vh;
+  width: 100vw;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size:cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+img{
+  position: relative;
+  left: 5%;
+  top: 15%;
+}
+h1, h2, h3, h4, h5, h6,p{
+  z-index: 1;
+  align-items: center;
+  text-align: center;
+  font-family: 'Slimey', sans-serif;
+  font-size: 6.5rem;
+  font-weight: bold;
+  color: rgb(0, 255, 0);
+  line-height: 3rem;
+  /* filter: drop-shadow(0px 10px 0px  #000); */
+  margin: 0;
+  text-shadow: 5px 2px 3px black , -5px 2px 3px black, -5px 10px 3px black, 5px 5px 3px black, 0px -3px 3px black;
+
+}
+h1{
+  font-size: 12rem;
+  letter-spacing: -0.2rem;
+  line-height: 6rem;
+  width: 100%;
+}
+h2{
+  font-size: 12rem;
+  line-height: 5rem;
+  padding: 2rem;
+}
+h3{
+  font-size: 4rem;
+}
+h4{
+  font-size: 4.5rem;
+  line-height: 3.5rem;
+}
+h5{
+  font-size: 2rem;
+  line-height: 2rem;
+}
+p{
+  width: 100%;
+  font-size: 1.2rem;
+  font-family:'Slimey', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif
+}
+
+section{
+  z-index: -1;
+  position: fixed;
+  bottom: 1%;
+}
+
+div{
+  margin-bottom: 2rem;
+}
+
+@media (orientation: portrait) {
+  h1, h2, h3, h4, p{
+    font-family: 'Slimey', sans-serif;
+    /* background-color: rgb(0, 0, 0); */
+    color: rgb(0, 255, 0);
+  }
+
+  section {
+    z-index: -1;
+    background-color: rgba(0, 0, 0, 0.1);
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100%;
+    width: 100%;
+  }
+  h1{
+    line-height: 6rem;
+    font-size: 12rem;
+  }
+  h2{
+    font-size: 10rem;
+  }
+  h3{
+    font-size: 3rem;
+  }
+  h4{
+    /* background-image: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0)); */
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    font-size: 4rem;
+  }
+  p{
+    font-size: 3rem;
+    font-family:'Slimey', 'Arial Narrow', Arial, sans-serif;
+  }
+  body{
+    background-size: auto;
+    display: flex;
+    justify-content: center;
+    background-repeat: repeat-y;
+    width: 100vw;
+  }
+}
+
+.noInfo{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+width: 100vw;
+}
+span{
+  color: rebeccapurple;
+  font-size: 4rem;
+  font-family: 'scratch', sans-serif;
+}
+/* #downleg{
+  width: 145px;
+  height: 712px;
+  background: url(../img/tallGuy-01.png) -645px -12px;
+  /* pos = texheight - height - positionheight * -1  */
+  /* border: solid 2px salmon; */
+/* } */
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+
