@@ -13,7 +13,7 @@ I'm a full stack developer with a background in Art and Technology
 Javascript, HTML, CSS, C#, bash 
 
 
-[[Documentation](https://linktodocumentation)](https://kultkino.nl/)
+(https://kultkino.nl/)
 
 
 ## License
